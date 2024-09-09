@@ -1,23 +1,23 @@
-import React, {FC} from 'react'
+import React, {type FC, type PropsWithChildren} from 'react'
 import {render, screen} from '@testing-library/react'
 import '@testing-library/jest-dom'
 
 import {addWrapper, flowMax} from '..'
 import {AddWrapperRenderCallback} from '../addWrapper'
 
-const Wrapper: FC<{
+const Wrapper: FC<PropsWithChildren<{
   x: string
-}> = ({x, children}) => (
+}>> = ({x, children}) => (
   <div data-testid="wrapper">
     <span data-testid="passed-x">{x}</span>
     {children}
   </div>
 )
 
-const Comp: FC<{
+const Comp: FC<PropsWithChildren<{
   x: string
   y: string
-}> = flowMax(
+}>> = flowMax(
   addWrapper((_render: AddWrapperRenderCallback<{z: number}>, {x}) => (
     <Wrapper x={x}>
       {_render({

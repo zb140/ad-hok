@@ -79,30 +79,30 @@ describe('addDisplayName', () => {
   })
 
   test('carries across addPropTypes()', () => {
-    expect(WithAddPropTypes({})!.type.displayName).toEqual(
+    expect((WithAddPropTypes({}) as any).type.displayName).toEqual(
       'addPropTypes(WithAddPropTypes)',
     )
   })
 
   test('carries across branch()', () => {
-    expect(WithBranch({})!.type.displayName).toEqual('branch(WithBranch)')
+    expect((WithBranch({}) as any).type.displayName).toEqual('branch(WithBranch)')
   })
 
   test('carries across addWrapper()', () => {
-    expect(WithAddWrapper({})!.type.displayName).toEqual(
+    expect((WithAddWrapper({}) as any).type.displayName).toEqual(
       'addWrapper(WithAddWrapper)',
     )
   })
 
   test('carries across branch() + addWrapper()', () => {
-    expect(WithBranchAndAddWrapper({})!.type().type.displayName).toEqual(
+    expect((WithBranchAndAddWrapper({}) as any).type().type.displayName).toEqual(
       'branch(addWrapper(WithBranchAndAddWrapper))',
     )
   })
 
   test('branch() + addWrapper() with no explicit display name', () => {
     expect(
-      NoDisplayNameBranchAndAddWrapper({})!.type().type.displayName,
+      (NoDisplayNameBranchAndAddWrapper({}) as any).type().type.displayName,
     ).toEqual('branch(addWrapper())')
   })
 })
