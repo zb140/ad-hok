@@ -1,10 +1,10 @@
-import isFunction from './utils/isFunction'
-import useComputedFromDependencies from './utils/useComputedFromDependencies'
+import isFunction from './utils/isFunction.js'
+import useComputedFromDependencies from './utils/useComputedFromDependencies.js'
 import {
   ValueOrFunctionOfProps,
   CurriedPropsAdder,
   DependenciesArgument,
-} from './helperTypes'
+} from './helperTypes.js'
 
 type AddPropsType = <
   TProps extends {},

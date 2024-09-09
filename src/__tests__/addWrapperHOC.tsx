@@ -1,7 +1,6 @@
 import React, {FC, ComponentType} from 'react'
 import {render, screen} from '@testing-library/react'
 import '@testing-library/jest-dom'
-import '@testing-library/jest-dom/extend-expect'
 
 import {addWrapperHOC, flowMax} from '..'
 import {PropAddingHOC} from '../addWrapperHOC'

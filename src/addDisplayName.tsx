@@ -1,4 +1,4 @@
-import {CurriedUnchangedProps} from './helperTypes'
+import {CurriedUnchangedProps} from './helperTypes.js'
 
 const markerPropertyName = '__ad-hok-addDisplayName'
 

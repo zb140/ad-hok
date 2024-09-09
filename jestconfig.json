@@ -1,8 +1,15 @@
 {
   "transform": {
-    "^.+\\.(t|j)sx?$": "ts-jest"
+    "^.+\\.(t|j)sx?$": [
+        "ts-jest",
+        { "useESM": true }
+    ]
   },
   "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
   "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
-  "moduleDirectories": ["node_modules", "src"]
+  "moduleDirectories": ["node_modules", "src"],
+  "moduleNameMapper": {
+    "^(\\.{1,2}/.*)\\.js$": "$1"
+  },
+  "testEnvironment": "jsdom"
 }

@@ -1,8 +1,8 @@
 import {useReducer, Reducer} from 'react'
 
-import isFunction from './utils/isFunction'
-import useMemoized from './utils/useMemoized'
-import {ValueOrFunctionOfProps} from './helperTypes'
+import isFunction from './utils/isFunction.js'
+import useMemoized from './utils/useMemoized.js'
+import {ValueOrFunctionOfProps} from './helperTypes.js'
 
 type AddReducerType = <TState extends {}, TAction, TProps extends {}>(
   reducer: Reducer<TState, TAction>,

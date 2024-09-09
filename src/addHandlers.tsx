@@ -1,7 +1,7 @@
-import mapValues from './utils/mapValues'
-import useComputedFromDependencies from './utils/useComputedFromDependencies'
+import mapValues from './utils/mapValues.js'
+import useComputedFromDependencies from './utils/useComputedFromDependencies.js'
 
-import {CurriedPropsAdder, DependenciesArgument} from './helperTypes'
+import {CurriedPropsAdder, DependenciesArgument} from './helperTypes.js'
 
 export interface HandlerCreators<TProps extends {}> {
   [key: string]: (props: TProps) => (...args: any[]) => any

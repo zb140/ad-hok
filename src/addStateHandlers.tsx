@@ -1,9 +1,9 @@
 import {useReducer, Reducer} from 'react'
 
-import isFunction from './utils/isFunction'
-import mapValues from './utils/mapValues'
-import useMemoized from './utils/useMemoized'
-import {ValueOrFunctionOfProps, CurriedPropsAdder} from './helperTypes'
+import isFunction from './utils/isFunction.js'
+import mapValues from './utils/mapValues.js'
+import useMemoized from './utils/useMemoized.js'
+import {ValueOrFunctionOfProps, CurriedPropsAdder} from './helperTypes.js'
 
 interface StateUpdaters<TProps extends {}, TState extends {}> {
   [key: string]: (

@@ -1,10 +1,10 @@
 import React, {ComponentType, FC} from 'react'
 
-import {addWrapperHOC} from './addWrapperHOC'
-import get from './utils/get'
-import isFunction from './utils/isFunction'
-import some from './utils/some'
-import {CurriedUnchangedProps, DependenciesArgument} from './helperTypes'
+import {addWrapperHOC} from './addWrapperHOC.js'
+import get from './utils/get.js'
+import isFunction from './utils/isFunction.js'
+import some from './utils/some.js'
+import {CurriedUnchangedProps, DependenciesArgument} from './helperTypes.js'
 
 const memo = <TProps extends {}>(
   compare: ((prevProps: TProps, props: TProps) => boolean) | undefined,

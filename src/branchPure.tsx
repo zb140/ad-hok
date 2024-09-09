@@ -1,4 +1,4 @@
-import {BranchType} from './branch'
+import {BranchType} from './branch.js'
 
 const branchPure = <TProps extends {}>(
   test: (props: TProps) => boolean,

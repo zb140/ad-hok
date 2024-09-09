@@ -1,6 +1,6 @@
 import React, {ReactElement, ComponentType} from 'react'
 
-import {CurriedPropsAdder} from './helperTypes'
+import {CurriedPropsAdder} from './helperTypes.js'
 
 const markerPropertyName = '__ad-hok-addWrapper'
 

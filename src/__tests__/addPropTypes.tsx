@@ -2,7 +2,6 @@
 import React, {FC} from 'react'
 import {render, screen} from '@testing-library/react'
 import '@testing-library/jest-dom'
-import '@testing-library/jest-dom/extend-expect'
 import PropTypes from 'prop-types'
 
 import {addPropTypes, addProps, flowMax} from '..'

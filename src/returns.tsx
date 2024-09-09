@@ -1,4 +1,4 @@
-import {CurriedUnchangedProps} from './helperTypes'
+import {CurriedUnchangedProps} from './helperTypes.js'
 
 const key = '__ad-hok-returns'
 

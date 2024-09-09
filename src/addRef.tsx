@@ -1,8 +1,8 @@
 import {useRef, MutableRefObject} from 'react'
 
-import isFunction from './utils/isFunction'
-import useMemoized from './utils/useMemoized'
-import {ValueOrFunctionOfProps, CurriedPropsAdder} from './helperTypes'
+import isFunction from './utils/isFunction.js'
+import useMemoized from './utils/useMemoized.js'
+import {ValueOrFunctionOfProps, CurriedPropsAdder} from './helperTypes.js'
 
 type AddRefType = <TRefName extends string, TRefValue, TProps extends {}>(
   refName: TRefName,

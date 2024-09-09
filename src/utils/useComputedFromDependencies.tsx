@@ -1,9 +1,9 @@
 import {useRef} from 'react'
 
-import isFunction from './isFunction'
-import get from './get'
-import usePrevious from './usePrevious'
-import useMemoized from './useMemoized'
+import isFunction from './isFunction.js'
+import get from './get.js'
+import usePrevious from './usePrevious.js'
+import useMemoized from './useMemoized.js'
 
 const useComputedFromDependencies = <TValue, TProps extends {}>({
   compute,
