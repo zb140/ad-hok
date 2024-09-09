@@ -1,5 +1,7 @@
-import React, {type FC, type PropsWithChildren} from 'react'
+import React from 'react'
 import {render, screen} from '@testing-library/react'
+import type {FC, PropsWithChildren} from 'react'
+
 import '@testing-library/jest-dom'
 
 import {addWrapper, flowMax} from '..'

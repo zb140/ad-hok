@@ -85,7 +85,9 @@ describe('addDisplayName', () => {
   })
 
   test('carries across branch()', () => {
-    expect((WithBranch({}) as any).type.displayName).toEqual('branch(WithBranch)')
+    expect((WithBranch({}) as any).type.displayName).toEqual(
+      'branch(WithBranch)',
+    )
   })
 
   test('carries across addWrapper()', () => {
@@ -95,9 +97,9 @@ describe('addDisplayName', () => {
   })
 
   test('carries across branch() + addWrapper()', () => {
-    expect((WithBranchAndAddWrapper({}) as any).type().type.displayName).toEqual(
-      'branch(addWrapper(WithBranchAndAddWrapper))',
-    )
+    expect(
+      (WithBranchAndAddWrapper({}) as any).type().type.displayName,
+    ).toEqual('branch(addWrapper(WithBranchAndAddWrapper))')
   })
 
   test('branch() + addWrapper() with no explicit display name', () => {
